@@ -248,14 +248,14 @@ export default function ArticleDrawer({ article, onClose }: ArticleDrawerProps) 
               </p>
             )}
 
-            {/* Terra AI Summary */}
+            {/* Landeed AI Summary */}
             <div className="rounded-xl border border-primary/20 bg-primary/5 dark:bg-primary/10 p-5 space-y-3">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-lg">
                   auto_awesome
                 </span>
                 <span className="text-xs font-bold text-primary uppercase tracking-wide">
-                  Terra AI Analysis
+                  Landeed AI Analysis
                 </span>
               </div>
 
@@ -269,7 +269,7 @@ export default function ArticleDrawer({ article, onClose }: ArticleDrawerProps) 
               {aiError && (
                 <p className="text-sm text-slate-400 italic">
                   {aiError === "API key not configured"
-                    ? "Add GEMINI_API_KEY to .env to enable Terra AI"
+                    ? "Add GEMINI_API_KEY to .env to enable Landeed AI"
                     : "Could not generate analysis. Try again later."}
                 </p>
               )}
